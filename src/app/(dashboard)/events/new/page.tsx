@@ -232,14 +232,14 @@ export default function NewEventPage() {
                 type="number"
                 min={0}
                 max={5000}
-                step={100}
+                step={1}
                 value={apexBp}
                 onChange={(e) => setApexBp(Number(e.target.value))}
                 required
               />
               <p className="text-xs text-muted-foreground">
                 Basis points (out of 10,000) redirected from Basic to Apex
-                during this event. 1000 = 10% of casts get an Apex chance.
+                during this event. 1 BP = 0.01%, 10 BP = 0.1%, 1000 BP = 10%.
               </p>
             </div>
             <div className="space-y-2">
